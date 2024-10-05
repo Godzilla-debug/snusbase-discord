@@ -102,7 +102,7 @@ async def help_command(ctx):
 
 # Function to run the bot
 def run_discord_bot():
-    bot.run('MTI4MjMwMTA3ODIxNzY5MTI0OQ.GvXhUm.PmwONix37JhJIys6Vujzm3MAmPng6Bwjxhlo1k')
+    bot.run('MTI4MjMwMTA3ODIxNzY5MTI0OQ.GINWSs.93CapUvrYQ9Y9HECPAlgxiGT678AeKZzCM6pZI')
 
 # Run both Flask server and Discord bot
 if __name__ == "__main__":
