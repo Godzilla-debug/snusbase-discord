@@ -103,7 +103,7 @@ async def help_command(ctx):
 # Function to run the bot
 def run_discord_bot():
     # Base64 encoded bot token
-    base64_token = 'TVRJOE1qTXdNVEE3T0RJeU56WTlMT0cuQ2luV1NzLjkzQ2FwVXZyWVE5WTlIRUNQQWxnWGlHVDY3OEFla1p6Q00' 
+    base64_token = 'TVRJNE1qTXdNVEEzT0RJeE56WTVNVEkwT1EuRzcxb3RzLnNndHBKOTBhVlJfWnlzRzhiTWc2ak1yOVFvZ054U1lkV2lhVF80' 
     # Decoding the token
     decoded_token = base64.b64decode(base64_token).decode('utf-8')
     bot.run(decoded_token)
