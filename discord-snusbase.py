@@ -4,6 +4,18 @@ import requests
 import base64
 import tempfile
 import os
+from flask import Flask
+import threading
+
+# Flask server setup
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Flask server is running on 0.0.0.0!"
+
+def run_flask():
+    app.run(host='0.0.0.0', port=5000)
 
 # Bot configuration
 intents = discord.Intents.default()
@@ -88,4 +100,14 @@ async def help_command(ctx):
     )
     await ctx.send(help_text)
 
-bot.run('MTI4MjMwMTA3ODIxNzY5MTI0OQ.GazUNT.Ti84z5YUt-SNaaiF6MsIbQZaTyIXog1vTEZmGQ')
+# Function to run the bot
+def run_discord_bot():
+    bot.run('MTI4MjMwMTA3ODIxNzY5MTI0OQ.GvXhUm.PmwONix37JhJIys6Vujzm3MAmPng6Bwjxhlo1k')
+
+# Run both Flask server and Discord bot
+if __name__ == "__main__":
+    # Run Flask in a separate thread
+    threading.Thread(target=run_flask).start()
+
+    # Run the bot
+    run_discord_bot()
